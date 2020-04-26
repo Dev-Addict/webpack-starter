@@ -1,3 +1,3 @@
-const sum = require('./sum');
+import sum from "./sum";
 
-console.log(3213 + 43214);
+console.log(sum(10, 12));
