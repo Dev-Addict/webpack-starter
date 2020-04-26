@@ -1,7 +1,14 @@
+import big from './assets/Big.jpg';
+import small from './assets/Small.jpg';
 import './style/imageViewer.css';
 
-const image = document.createElement('img');
-image.src = 'http://lorempixel.com/400/400';
-image.classList.add('image-viewer-lorem-image');
+const createImage = (image) => {
+    const imageElement = document.createElement('img');
+    imageElement.src = image;
+    imageElement.classList.add('image-viewer-lorem-image');
 
-document.body.appendChild(image);
+    document.body.appendChild(imageElement);
+};
+
+createImage(big);
+createImage(small);
